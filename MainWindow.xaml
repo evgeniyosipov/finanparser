@@ -1,0 +1,23 @@
+﻿<Window x:Class="FinAnParser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FinAnParser" Height="240" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="170"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="742*"/>
+            <ColumnDefinition Width="149*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TextBoxFROM" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Margin="10,0,5,0" BorderThickness="1" IsEnabled="True" Padding="0" VerticalContentAlignment="Center" IsReadOnly="True"/>
+        <TextBox x:Name="TextBoxWHERE" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Margin="10,0,5,0" IsEnabled="True" BorderThickness="1" Padding="0" Grid.Row="1" VerticalContentAlignment="Center" IsReadOnly="True"/>
+        <Button Name="ButtonFROM"  Content="Что взять?" Grid.Column="1" VerticalAlignment="Center" Margin="5,0" Height="22" BorderThickness="0" Padding="0" Click="ButtonFROM_Click"/>
+        <Button Name="ButtonWHERE" Content="Куда положить?" Grid.Column="1" VerticalAlignment="Center" Margin="5,0" Height="22" BorderThickness="0" Padding="0" Grid.Row="1" Click="ButtonWHERE_Click"/>
+        <Button Name="ButtonGO" IsEnabled="False" Content="Поехали!" Grid.Row="2" VerticalAlignment="Center" Grid.Column="1" Height="35" Margin="5,0" Click="ButtonGO_Click" BorderThickness="0"/>
+        <TextBox Name="TextBoxRESULTINFO" Grid.Row="2" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsEnabled="False" Margin="10,0,5,0" FontWeight="Bold"/>
+    </Grid>
+</Window>
